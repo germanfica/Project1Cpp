@@ -1,10 +1,10 @@
-#pragma once
+#ifndef MOB_H
+#define MOB_H
 
-// Mob class represents an enemy in the game.
-class Mob {
-public:
-    int health = 100;  // Health of the mob.
+typedef struct {
+    int health;
+} Mob;
 
-    // Method to receive damage.
-    void takeDamage(int damage);
-};
+void takeDamage_Mob(Mob* mob, int damage);
+
+#endif // MOB_H

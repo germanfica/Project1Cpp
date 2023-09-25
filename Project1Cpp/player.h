@@ -1,14 +1,13 @@
-#pragma once
+#ifndef PLAYER_H
+#define PLAYER_H
+
 #include "mob.h"
 
-// Player class represents the main character in the game.
-class Player {
-public:
-    int health = 100;  // Health of the player.
+typedef struct {
+    int health;
+} Player;
 
-    // Method to inflict damage on a mob.
-    void dealDamage(Mob& m);
+void dealDamage(Player* player, Mob* mob);
+void takeDamage_Player(Player* player, int damage);
 
-    // Method to receive damage.
-    void takeDamage(int damage);
-};
+#endif // PLAYER_H

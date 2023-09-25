@@ -127,9 +127,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="mob.cpp" />
-    <ClCompile Include="player.cpp" />
+    <ClCompile Include="main.c" />
+    <ClCompile Include="mob.c" />
+    <ClCompile Include="player.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="mob.h" />
